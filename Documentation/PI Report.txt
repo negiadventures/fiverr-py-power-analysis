@@ -1,0 +1,99 @@
+The Power Investigation Report will comprise of three parts, one for each of the investigations. Each part should be a mini-paper 2-3 pages long and follow the structure of a standard academic report. Required sections are:
+• Abstract: Explain the purpose of the investigation and state the parameters you have investigated, and the outcomes/recommendations.
+• Background: Discuss the purpose of the program/simulation and your choice of parameters.
+• Methodology: Describe how you have chosen to set up and compare the simulations, and why.
+Include commands, input files, outputs – anything needed to reproduce your results.
+• Results: Present the results of your simulations – include tables, plots and discussion.
+• Conclusion and Future Work: Give conclusions and what further investigations could
+  follow.
+• References
+
+Power Usage Investigation
+Abstract
+This investigation is based on data collected from a power meter of a house which contains information on date, time and the units shown on the meter.
+We will see when are the highest and the lowest usage rates, any patterns found in the usage of electricity, we will also interpret about factors in power use, any external factors involved.
+
+Background
+The Purpose of this Investigation is to understand if we can infer from the data about the relation between the of week and consumption of electricity.
+
+Methodology
+
+Results
+Middle of the week major usage
+
+Conclusion
+# 1. We have daily data for meter readings for a house for a week, we can know which time of a day has maximum power usage
+# 2. We can see even the meter readings appear to be increasing at constant rate, but units consumed per day are varying
+# 3. Major pikes in middle of the week and during weekends are lower.
+# factors may include family outings, children outdoor activities during weekends
+# consumption of consoles/TVs for longer duration
+-weekends family outings
+
+References
+https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.plot.html
+https://www.tutorialspoint.com/matplotlib/index.htm
+
+
+
+
+Power Modelling Investigation
+Abstract
+This investigation is based on the hourly usage of appliances in a house and their power rating. We will see what how usage of each appliance impact total power consumption in the house.
+We will also introduce a new factor, rate of solar energy and use in our model to find out how it would impact.
+
+Background
+The purpose of this investigation is to identify the appliances which have major impact on power consumption in the house.
+Also, is running time a factor or power units of an appliance or both. We will also introduce pricing of solar and compare how our costs would look with solar vs electricity with current run rate of appliances.
+
+Methodology
+
+Results
+Power consumption for each appliance
+
+Conclusion
+# 1. We have hourly usage per appliance for my house.
+# 2. We get the total hourly usage for each appliance collectively (multiple same appliance clubbed together),
+# as noted previously, TVs are used for more duration than any other appliance
+# 3. However, when calculating power consumption with the use of power ratings, we find that the major factor influencing
+# power consumption is Aircon and not TV due to less power rating of TV and more for Aircon.
+# If we compare solar vs electricity pricing, we can get major drop in pricing to power our house.
+
+References
+https://pandas.pydata.org/pandas-docs/version/0.17.0/visualization.html
+https://www.tutorialspoint.com/matplotlib/index.htm
+https://www.energuide.be/en/questions-answers/how-can-i-calculate-the-consumption-of-an-electrical-appliance/94/
+https://www.electricchoice.com/electricity-prices-by-state/
+
+
+
+
+
+Power simulation Investigation
+Abstract
+This investigation is based on multiple files as in Power Modelling investigationbut for multiple houses in the locality. We will see how these appliances with different power ratings and different hourly usage in each house impacts usage of electricity in that locality.
+We will also consider solar energy as an alternative source and how it would help both electricity provider for load balancing and house owners to get electrical energy in their houses at cheaper prices. Also considering various factors, if there is any way in which people get power in dual mode.
+
+
+Background
+The purpose of this investigation is to compare and analyze power usage of electricity in a locality.
+Also, how solar power will benifit the locality in terms of annual charges as well as the for a electricity provider, how load can be balanced.
+
+Methodology
+
+Results
+##savings ~40% solar vs electricity
+
+Conclusion
+#1. Now we have data for whole locality, we can see how is the usage of each appliance per house
+#2. We can compare total power consumption per house and pricing solar vs electricity
+#3. We can see Approx 40% savings for each house.
+#4. As a electricity supplier, this maybe a drop in revenue if people plan to invest in solar power, However, can
+# be partner with solar power provider, since people can't completely rely on solar power due to seasonal factors.
+# Like during monsoon, they have to use normal electricity.
+
+References
+https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.plot.html
+https://pandas.pydata.org/pandas-docs/version/0.17.0/visualization.html
+https://www.tutorialspoint.com/matplotlib/index.htm
+https://www.energuide.be/en/questions-answers/how-can-i-calculate-the-consumption-of-an-electrical-appliance/94/
+https://www.electricchoice.com/electricity-prices-by-state/

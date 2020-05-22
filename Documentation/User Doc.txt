@@ -1,0 +1,94 @@
+
+USER Documentation
+
+Dependencies Required to run the code:
+python3 - https://www.python.org/downloads/
+jupyter notebook - https://jupyter.org/install
+pandas library - https://pandas.pydata.org/getting_started.html
+matplotlib library - https://matplotlib.org/users/installing.html#
+
+
+Power Usage Investigation
+Overview, Purpose & Features
+In this investigation, we have access to data collected from the readings of a power meter.
+Based on the weekly meter readings, we will investigate if there is a pattern found in hour of a day or day of week for usage of electricity based on units.
+The Purpose of this Investigation is to understand if we can infer from the data about the relation between the of week and consumption of electricity.
+There are some plots which help us understand about the units consumed for each hour of day. Then, we will also see how many units are consumed each day and how pattern ends during the weekends.
+
+How to user program
+1. Open terminal, go to your code location and Open Jupyter notebook using the command in terminal:
+  jupyter-notebook
+3. Open the Power Usage.ipynb file.
+3. Run the complete script by clicking on Cell Menu -> Run All
+
+
+Code overview, features & implementation
+Read csv into pandas dataframe. Converted date into %d-%m-%Y %H:%M:%S for better analysis while reading into dataframe.
+Plot datetime against meter reading.
+Split Datatime to date.
+Calculate total units consumed for each day by getting max reading for each day and subtracting it to max unit of previous day. Create new column in dataframe as units. This column identifies as no of units consumed for that day. Keep only the max reading of the day and units consumed calculated for that day.
+Get the day of the week based on the date.
+PLot subplots using matplotlib:
+Date vs units
+Date vs Max meter reading for the day
+Bar plot day of week vs units consumed
+
+
+
+
+
+
+
+
+Power Modelling Investigation
+overview
+In this investigation, we have a new file with information on the appliances in a house of various power ratings, usage of each appliance for each hour,
+ number of residents in the house.
+ The purpose of this investigation is to identify the appliances which have major impact on power consumption in the house.
+ Also, is running time a factor or power units of an appliance or both. We will also introduce pricing of solar and compare how our costs would look with solar vs electricity with current run rate of appliances.
+The analysis includes various plots which would help us in understanding the Power usage per appliance and usage in hours for the day. Another plot, which will indicate the differences in the cost if solar power is used in the house.
+
+How to user program
+1. Open terminal, go to your code location and Open Jupyter notebook using the command in terminal:
+  jupyter-notebook
+3. Open the Power Modelling.ipynb file.
+3. Run the complete script by clicking on Cell Menu -> Run All
+
+Code overview, features & implementation
+read file and also transform into 2 dimensional format so it is easier for analysis
+also split the hourly usage to columns so they can be used in analysis
+new column for total hours for each appliance
+ calculate power consumption in kWh using hours and power rating of appliances
+Subplots power usage per appliance-
+Plot Hourly usage per appliance and power consumption per appliance
+solar and electricity rate
+calculate rates for each appliance
+plot rates of solar & electricity
+
+
+
+
+Power simulation Investigation
+overview
+In this investigation, we have access to files as in Investigation 2 but for multiple houses in a locality.
+This will help us investigate as an electricity provider, what we can decide on providing power to the locality.
+Solar vs electricity - what will benifit both. The purpose of this investigation is to compare and analyze power usage of electricity in a locality.
+Also, how solar power will benifit the locality in terms of annual charges as well as the for a electricity provider, how load can be balanced.
+THe analysis includes plots where compare how various appliances are used in all houses of a locality. Also, we will see how much annually each house can save their money in their electricity if opted for full Solar.
+
+
+
+How to user program
+1. Open terminal, go to your code location and Open Jupyter notebook using the command in terminal:
+  jupyter-notebook
+3. Open the Power Simulation.ipynb file.
+3. Run the complete script by clicking on Cell Menu -> Run All
+
+
+Code overview, features & implementation
+read all files of the locality and transform into 2 dimensional format so they can be easily imported into pandas DataFrame.
+create columns in DataFrame for total usage hours of appliances, no of resident, and house no which identifies each house.
+subplots for each house representing appliances and their hourly Usage
+add new calculated columns - consumption per year in kWh, annual solar rate, annual electricity rate for each appliance for each house
+plot for comparing solar vs electricity annual charges for each house
+new column for annual charges % savings
